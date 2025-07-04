@@ -1,10 +1,10 @@
-# idb-chunk-store 
+# idb-chunk-store
 
 [![Socket Badge](https://socket.dev/api/badge/npm/package/idb-chunk-store)](https://socket.dev/npm/package/idb-chunk-store)
 [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-[ci-image]: https://img.shields.io/github/workflow/status/SocketDev/idb-chunk-store/ci/master
-[ci-url]: https://github.com/SocketDev/idb-chunk-store/actions
+[ci-image]: https://img.shields.io/github/workflow/status/webtorrent/idb-chunk-store/ci/master
+[ci-url]: https://github.com/webtorrent/idb-chunk-store/actions
 [npm-image]: https://img.shields.io/npm/v/idb-chunk-store.svg
 [npm-url]: https://npmjs.org/package/idb-chunk-store
 [downloads-image]: https://img.shields.io/npm/dm/idb-chunk-store.svg
@@ -24,7 +24,7 @@ npm install idb-chunk-store
 
 ## Usage
 
-``` js
+```js
 var idbChunkStore = require('idb-chunk-store')
 var chunks = idbChunkStore(10)
 
@@ -43,7 +43,7 @@ chunks.put(0, new Buffer('01234567890'), function (err) {
 
 Create a new chunk store with chunks of size `chunkLength`.
 
-* `opts.name` - use a name to separate the contents of different stores
+- `opts.name` - use a name to separate the contents of different stores
 
 ## License
 
